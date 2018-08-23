@@ -19,7 +19,7 @@ def load_users(user_file):
     # User.query.delete()
 
     # Read u.user file and insert data
-    for i, row in enumarate(open(user_file)):
+    for i, row in enumerate(open(user_file)):
         row = row.rstrip()
         user_id, age, gender, occupation, zipcode = row.split("|")
 
